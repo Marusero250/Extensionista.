@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Juntos: Sucesso nas Suas Mãos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aprendendo Juntos: Sucesso nas Suas Mãos</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Página Inicial</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#blog">Blog do Dia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo ao Aprendendo Juntos!</h2>
+        <p>Escolha uma categoria para começar o quiz e aprender brincando!</p>
+        <div class="category-buttons">
+            <button data-category="math" class="category-btn">Matemática</button>
+            <button data-category="portuguese" class="category-btn">Português</button>
+            <button data-category="science" class="category-btn">Ciências</button>
+        </div>
+    </section>
+
+    <section id="quiz" style="display: none;">
+        <h2>Quiz Educativo</h2>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="answer-buttons" class="btn-container">
+                <!-- Respostas serão inseridas aqui via JavaScript -->
+            </div>
+        </div>
+        <button id="next-btn" style="display: none;">Próxima Pergunta</button>
+        <p id="feedback"></p>
+        <p id="score">Pontuação: 0</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Eu sou Marcelo Passos, um estudante de Análise e Desenvolvimento de Sistemas na Uninter, e este é meu projeto para ajudar as crianças do bairro Padre Ulrico a melhorar seu desempenho escolar e se divertir aprendendo!</p>
+    </section>
+
+    <section id="blog">
+        <h2>Blog do Dia</h2>
+        <article>
+            <h3>Matemática</h3>
+            <p>Dicas e truques para resolver problemas de matemática de forma mais fácil e divertida!</p>
+        </article>
+        <article>
+            <h3>Português</h3>
+            <p>Aprenda novas palavras e melhore sua escrita com essas dicas de português.</p>
+        </article>
+        <article>
+            <h3>Ciências</h3>
+            <p>Explore o mundo ao seu redor com nossas atividades de ciências.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aprendendo Juntos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

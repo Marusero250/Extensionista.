@@ -1,0 +1,290 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos do header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #f39c12;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f39c12;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Estilos das seções */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section#home {
+    padding: 100px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Botões de categorias */
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-btn:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+.category-btn:focus {
+    outline: none;
+}
+
+/* Estilo do Quiz */
+#quiz {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-container button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-container button:hover {
+    background: #2980b9;
+    transform: scale(1.02);
+}
+
+#next-btn {
+    background: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#next-btn:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+#feedback {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #f39c12;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ecf0f1;
+}
+
+/* Estilos da seção Sobre Mim */
+section#about p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos da seção Blog do Dia */
+section#blog {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+section#blog h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+    text-transform: uppercase;
+}
+
+section#blog p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos do Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #f39c12;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    border-top: 3px solid #e74c3c;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Design Responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .category-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    #question {
+        font-size: 1.3rem;
+    }
+
+    .btn-container button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #next-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    #feedback {
+        font-size: 1.2rem;
+    }
+
+    #score {
+        font-size: 1rem;
+    }
+}
